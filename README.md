@@ -1,27 +1,6 @@
 # Para usar: 
 <p> para acessar o executável do windows vá para dist/firstwindow.py e clique em "view raw" para instalção. </p>
 
-## Banco de dados:
-
-### Crie a database:
-
-<p>
-CREATE DATABASE meusql;  
-</p>
-
-### Crie a tabela:
-
-<p>
-  CREATE TABLE `acervo` (
-  `i_id_acervo` int NOT NULL AUTO_INCREMENT,
-  `s_titulo_acervo` varchar(200) NOT NULL,
-  `s_autor_acervo` varchar(100) NOT NULL,
-  `s_genero_acervo` varchar(50) NOT NULL,
-  `i_quantidade_acervo` int NOT NULL,
-  PRIMARY KEY (`i_id_acervo`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
-</p>
-
 # Sobre o projeto
 
 ## Descrição:
@@ -32,5 +11,37 @@ Tecnologias: ![Python](https://img.shields.io/badge/-Python-yellow) ![Tkinter](h
 
 ## Interface:
 
-![executavel_tkinter](https://github.com/user-attachments/assets/66b298f3-7c70-4d7e-b438-ac9523c281e0)
+
+![interfacetk1](https://github.com/user-attachments/assets/98150777-c3e9-4929-b4b0-404dd6a9f1ed)
+
+
+## Modo de usar:
+
+### Função limpar:
+
+Ao clicar nele, se existir alguma informação em algum dos campos, ela será excluida e o campo voltará a ficar em branco.
+
+### Função buscar:
+
+Existe várias formas de busca dependendo do que se deseja buscar. Se quiser buscar por título, por exemplo, basta preencher o campo "Título" e clicar em "Buscar". Há também a possibilidade preencher todos os campos e clicar em "Buscar", dessa forma, ele é possível fazer uma busca mais específica.
+
+### Função novo:
+
+Ao preencher os campos "Título", "Autor" e "Gênero" e clicar em "Novo", o livro será criado no banco de dados e mostrado na tela.
+
+### Função alterar:
+
+Para alterar clique duas vezes seguida sobre o livro, mostrado no visor, que deseja alterar. Com isso, as informações desse livro serão mostradas nos seus respectivos campos. Agora basta alterar as informações que deseja e clicar em "Alterar".
+
+OBS: não é possível alterar o ID, caso faça, o livro não sofrerá nenhuma alteração.
+
+### Função apagar:
+
+Para deletar um livro, basta clicar uma vez em cima do livro em questão para selecioná-lo e em seguida clicar em "Apagar". 
+
+OBS: caso haja muitos livros e não seja demorado para encontrar um livro, use a função buscar e em seguida a função apagar.
+
+### Função todos os livros:
+
+Essa função mostra o acervo inteiro. Para usá-la, basta clicar em "todos os livros".
 
